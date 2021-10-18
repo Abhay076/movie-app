@@ -2,7 +2,7 @@
 function App() {
   return (
     <div className="App">
-     Project Setup
+     Project Hello Wold Setup
     </div>
   );
 }
