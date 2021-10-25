@@ -59,7 +59,7 @@ class App extends React.Component{
               <div className="no-movies">No movies to display! </div>
             ) : null}
           </div>
-          {/* {displaymovies.length===0 ? <div className="no-movies">no movies to display!</div>:null} */}
+          {/* {displayMovies.length===0 ? <div className="no-movies">no movies to display!</div>:null} */}
        </div>
     </div>
   );
