@@ -5,6 +5,7 @@
         showFavourites:false
     }
     export function movies(state=initialMoviesState,action){
+        console.log('MOVIES REDUCERS');
         // if(action.type===ADD_MOVIES){
         //     //return action.movies
         //     return{
@@ -45,6 +46,7 @@ const initialSearchState={
     result:{}
 }
 export function search(state=initialSearchState,action){
+    console.log('SEARCH REDUCERS');
     return state;
 }
 const initialRootState={
