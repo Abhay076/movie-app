@@ -30,7 +30,7 @@ class App extends React.Component{
   }
   render(){
    // console.log('RENDER');
-   const { movies } = this.props;
+   const { movies,search} = this.props;
    console.log('state props',this.props);
 
     const {list,favourites,showFavourites}= movies//list:[], favourites:[]
@@ -39,7 +39,7 @@ class App extends React.Component{
     console.log('RENDER',this.props.store.getState());
   return (
     <div className="App">
-       <Navbar/>
+       <Navbar dispatch={this.props.store.dispatch} search={search}/>
        <div className="main">
           <div className="tabs">
             <div  className={`tab ${showFavourites ? '' : 'active-tabs'}`} onClick={() => this.changeTab(false)}>Movies</div>

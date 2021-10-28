@@ -50,14 +50,14 @@ export function addMovieToList(movie) {
         .then((movie) => {
           console.log('movie', movie);
           // dispatch action to save search results in store
-          //dispatch(addMovieSearchResult(movie));
+          dispatch(addMovieSearchResult(movie));
         });
     };
   }
-//   export function addMovieSearchResult(movie) {
-//     return {
-//       type: ADD_SEARCH_RESULT,
-//       movie,
-//     };
-//   }
+  export function addMovieSearchResult(movie) {
+    return {
+      type: ADD_SEARCH_RESULT,
+      movie,
+    };
+  }
   
